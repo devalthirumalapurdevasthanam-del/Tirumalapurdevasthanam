@@ -35,26 +35,34 @@ nav a:hover{
 .hero{
   background:
     linear-gradient(
-      rgba(120,40,10,0.55),
-      rgba(120,40,10,0.55)
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
     ),
-    url("../images/main_temple.jpeg") center/cover no-repeat;
+    url("../images/main_temple.jpeg") center center / cover no-repeat;
+
+  width:100%;
+  min-height:520px;          /* 🔑 makes image LARGE */
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
   color:#ffffff;
   text-align:center;
-  padding:95px 20px;
-  margin:25px;
-  border-radius:16px;
-  box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+  margin:30px auto;
+  border-radius:18px;
+  box-shadow:0 14px 40px rgba(0,0,0,.35);
 }
 
+
 .hero h1{
-  font-size:34px;
-  font-weight:600;
+  font-size:36px;
+  line-height:1.4;
   max-width:900px;
   margin:auto;
-  line-height:1.4;
+  font-weight:600;
 }
+
 .hero::after{
   content:"";
   display:block;
@@ -164,11 +172,10 @@ nav a:hover{
 }
 /* ===== MOBILE OPTIMIZATION ===== */
 @media(max-width:768px){
-  .lang-switch.simple{
-    margin-top:8px;
-    justify-content:center;
+  .hero{
+    min-height:320px;   /* still big on mobile */
+    margin:15px;
   }
-}
 
 
   /* Header */
@@ -208,9 +215,8 @@ nav a:hover{
 
   .hero h1{
     font-size:22px;
-    line-height:1.4;
   }
-
+}
   /* Sections */
  section{
   max-width:1150px;
