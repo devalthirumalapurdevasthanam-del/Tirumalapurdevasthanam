@@ -1,28 +1,51 @@
-body { font-family: Arial; background:#faf7f2; margin:0; padding:20px; }
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:
+    radial-gradient(circle at top, #ffe3a3 0%, #f7b733 35%, #e67e22 100%);
+  color:#2d1b0f;
+  line-height:1.7;
+}
+
 header{
-  background:#f7f3ea; /* soft cream */
-  padding:14px 30px;
+  background:linear-gradient(
+    to bottom,
+    #f5a623 0%,
+    #e25822 50%,
+    #b83a1b 100%
+  );
+  padding:16px 30px;
   display:flex;
   align-items:center;
   justify-content:space-between;
   flex-wrap:wrap;
-  border-bottom:2px solid #e6d8b5;
+  border-bottom:4px solid #8b2c14;
+}
+header h2{
+  color:#ffffff;
+}
+nav a{
+  color:#fff6e0;
+  font-weight:600;
+}
+nav a:hover{
+  color:#ffe08a;
 }
 
-nav a { margin:5px; text-decoration:none; }
 .hero{
   background:
     linear-gradient(
-      rgba(47,62,78,0.65),
-      rgba(47,62,78,0.65)
+      rgba(120,40,10,0.55),
+      rgba(120,40,10,0.55)
     ),
-    url("../images/main_temple.jpeg") center center / cover no-repeat;
+    url("../images/main_temple.jpeg") center/cover no-repeat;
 
   color:#ffffff;
   text-align:center;
-  padding:90px 20px;
-  margin:30px;
-  border-radius:14px;
+  padding:95px 20px;
+  margin:25px;
+  border-radius:16px;
+  box-shadow:0 12px 30px rgba(0,0,0,.35);
 }
 
 .hero h1{
@@ -128,19 +151,14 @@ nav a { margin:5px; text-decoration:none; }
 }
 
 .lang-switch.simple button{
-  background:#ffffff;
-  border:1px solid #d6c49a;
-  padding:4px 10px;
-  font-size:13px;
-  border-radius:4px;
-  cursor:pointer;
-  color:#3a2a18;
+  background:#fff6e0;
+  border:1px solid #e2b14a;
+  color:#7a2c0c;
 }
 
 .lang-switch.simple button.active{
-  background:#c9a24d;
-  color:#ffffff;
-  border-color:#c9a24d;
+  background:#ffd56a;
+  color:#7a2c0c;
 }
 
 
@@ -200,10 +218,14 @@ nav a { margin:5px; text-decoration:none; }
   }
 
   /* Sections */
-  section{
-    margin:30px auto;
-    padding:0 15px;
-  }
+ section{
+  max-width:1150px;
+  margin:45px auto;
+  padding:30px 25px;
+  background:#fffdf8;
+  border-radius:14px;
+  box-shadow:0 10px 28px rgba(0,0,0,.15);
+}
 
   section h1,
   section h2{
@@ -216,8 +238,12 @@ nav a { margin:5px; text-decoration:none; }
   }
 
   .card{
-    padding:18px;
-  }
+  background:#ffffff;
+  padding:22px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
+  border-top:5px solid #e67e22;
+}
 
   /* Gallery */
   .gallery-grid{
@@ -237,13 +263,23 @@ nav a { margin:5px; text-decoration:none; }
   .footer-container{
     text-align:center;
   }
+.site-footer{
+  background:linear-gradient(
+    to right,
+    #5a1a0c,
+    #7a2412,
+    #5a1a0c
+  );
+  color:#f5e6c8;
+}
+
 
   .footer-box{
     margin-bottom:20px;
   }
 
-  .footer-bottom{
-    font-size:13px;
-    padding:12px;
-  }
+ .footer-bottom{
+  background:#3e1208;
+  color:#f3d9a4;
+}
 }
