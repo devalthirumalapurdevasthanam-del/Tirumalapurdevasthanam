@@ -1,4 +1,26 @@
 body { font-family: Arial; background:#faf7f2; margin:0; padding:20px; }
 header { background:#f5e8c7; padding:10px; }
 nav a { margin:5px; text-decoration:none; }
-.hero { background:#fff3d6; padding:40px; text-align:center; }
+.hero{
+  background:
+    linear-gradient(
+      rgba(47,62,78,0.65),
+      rgba(47,62,78,0.65)
+    ),
+    url("../images/main_temple.jpeg") center center / cover no-repeat;
+
+  color:#ffffff;
+  text-align:center;
+  padding:90px 20px;
+  margin:30px;
+  border-radius:14px;
+}
+
+.hero h1{
+  font-size:34px;
+  font-weight:600;
+  max-width:900px;
+  margin:auto;
+  line-height:1.4;
+}
+
