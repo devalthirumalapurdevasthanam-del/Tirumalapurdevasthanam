@@ -121,28 +121,28 @@ nav a { margin:5px; text-decoration:none; }
   font-size:14px;
 }
 /* ===== LANGUAGE SWITCH ===== */
-.lang-switch{
+/* ===== SIMPLE LANGUAGE SWITCH ===== */
+.lang-switch.simple{
   display:flex;
-  background:#e8dfcf;
-  border-radius:30px;
-  padding:4px;
+  gap:6px;
 }
 
-.lang-switch button{
-  border:none;
-  background:transparent;
-  padding:6px 14px;
-  border-radius:20px;
-  font-weight:600;
+.lang-switch.simple button{
+  background:#ffffff;
+  border:1px solid #d6c49a;
+  padding:4px 10px;
+  font-size:13px;
+  border-radius:4px;
   cursor:pointer;
   color:#3a2a18;
-  transition:all .25s ease;
 }
 
-.lang-switch button.active{
+.lang-switch.simple button.active{
   background:#c9a24d;
-  color:#fff;
+  color:#ffffff;
+  border-color:#c9a24d;
 }
+
 
 .footer-bottom a{
   color:#f5c46b;
