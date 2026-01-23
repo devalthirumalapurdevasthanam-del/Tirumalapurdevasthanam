@@ -186,11 +186,11 @@ nav a.active{
 }
 /* ===== MOBILE OPTIMIZATION ===== */
 @media(max-width:768px){
-  .hero{
-    min-height:320px;   /* still big on mobile */
-    margin:15px;
+  nav a{
+    padding:6px 10px;
+    font-size:14px;
   }
-
+}
 
   /* Header */
   header{
