@@ -149,7 +149,13 @@ nav a { margin:5px; text-decoration:none; }
   text-decoration:none;
 }
 /* ===== MOBILE OPTIMIZATION ===== */
-@media (max-width: 768px){
+@media(max-width:768px){
+  .lang-switch.simple{
+    margin-top:8px;
+    justify-content:center;
+  }
+}
+
 
   /* Header */
   header{
