@@ -23,4 +23,13 @@ nav a { margin:5px; text-decoration:none; }
   margin:auto;
   line-height:1.4;
 }
+.hero::after{
+  content:"";
+  display:block;
+  margin:25px auto 0;
+  width:80px;
+  height:4px;
+  background:#c9a24d;
+  border-radius:2px;
+}
 
