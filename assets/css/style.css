@@ -32,4 +32,13 @@ nav a { margin:5px; text-decoration:none; }
   background:#c9a24d;
   border-radius:2px;
 }
+.service-card{
+  text-align:center;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
 
