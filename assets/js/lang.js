@@ -21,6 +21,33 @@ function updateLangButtons(lang){
     document.getElementById("btn-en")?.classList.add("active");
   }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("bg-audio");
+  const toggle = document.getElementById("audio-toggle");
+
+  if (!audio || !toggle) return;
+
+  let isMuted = localStorage.getItem("audioMuted") === "true";
+
+  audio.muted = isMuted;
+  toggle.textContent = isMuted ? "🔇" : "🔊";
+
+  // Try autoplay (allowed after user interaction)
+  document.body.addEventListener("click", () => {
+    if (!isMuted && audio.paused) {
+      audio.play().catch(()=>{});
+    }
+  }, { once:true });
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    isMuted = !isMuted;
+    audio.muted = isMuted;
+    toggle.textContent = isMuted ? "🔇" : "🔊";
+    localStorage.setItem("audioMuted", isMuted);
+    if (!isMuted) audio.play().catch(()=>{});
+  });
+});
 
 window.onload = () => {
   const lang = localStorage.getItem("lang") || "te";
