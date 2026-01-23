@@ -203,10 +203,8 @@ nav a:hover{
 
   /* Hero */
   .hero{
-    padding:55px 15px;
-    margin:15px;
-    border-radius:10px;
-  }
+  margin-top:25px;
+}
 
   .hero h1{
     font-size:22px;
