@@ -300,3 +300,42 @@ section.gallery-section{
   color:#f3d9a4;
 }
 }
+/* ===== AUDIO BAR ===== */
+.audio-bar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:2000;
+  background:linear-gradient(to right,#4b3f8c,#6b4fb3);
+  color:#fff;
+  padding:10px 18px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:14px;
+}
+
+.audio-bar strong{
+  font-size:16px;
+}
+
+.audio-bar button{
+  margin-left:auto;
+  background:rgba(255,255,255,0.2);
+  border:none;
+  color:#fff;
+  padding:6px 10px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.audio-bar button:hover{
+  background:rgba(255,255,255,0.35);
+}
+
+/* Push page content below audio bar */
+body{
+  padding-top:55px;
+}
