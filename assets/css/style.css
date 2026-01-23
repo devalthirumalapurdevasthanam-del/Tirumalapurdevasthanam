@@ -1,5 +1,14 @@
 body { font-family: Arial; background:#faf7f2; margin:0; padding:20px; }
-header { background:#f5e8c7; padding:10px; }
+header{
+  background:#f7f3ea; /* soft cream */
+  padding:14px 30px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  border-bottom:2px solid #e6d8b5;
+}
+
 nav a { margin:5px; text-decoration:none; }
 .hero{
   background:
