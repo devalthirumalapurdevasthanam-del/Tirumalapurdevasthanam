@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="te">
 <head>
-<meta charset="UTF-8">
-<title>Contact</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/lang.js" defer></cript>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/lang.js" defer></script>
 </head>
+
 <body>
 
-<header><a href="index.html">← Home</a></header>
+<header>
+  <h2 data-key="site_title"></h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="sevas.html">Sevas</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="goshala.html">Goshala</a>
+    <a href="donations.html">Donations</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
 
-<h1 data-key="contact_title"></h1>
-<p data-key="contact_addr"></p>
+  <div class="lang-switch simple">
+    <button onclick="setLang('te')" id="btn-te">తెలుగు</button>
+    <button onclick="setLang('en')" id="btn-en">EN</button>
+  </div>
+</header>
+
+<!-- HERO BANNER -->
+<section class="hero">
+  <h1>Contact Us</h1>
+</section>
+
+<!-- CONTACT DETAILS -->
+<section>
+  <h2 data-key="contact_title"></h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🛕 Temple Address</h3>
+      <p>
+        Sri Sri Sri Bhunela Sametha<br>
+        Sri Venkateshwara Swamy Devasthanam<br><br>
+        Devalthirumalpur Village,<br>
+        Pedhakothapally Mandal,<br>
+        Nagarkurnool District,<br>
+        Telangana – India
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📞 Contact Number</h3>
+      <p>
+        +91 90000 12345<br>
+        +91 90000 00000
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📧 Email</h3>
+      <p>
+        <a href="mailto:devalthirumalapurdevasthanam@gmail.com">
+          devalthirumalapurdevasthanam@gmail.com
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section>
+  <h2>Location Map</h2>
+  <div class="card">
+    <p>
+      Google Map will be embedded here later for
+      Sri Sri Sri Bhunela Sametha Sri Venkateshwara Swamy Devasthanam,
+      Devalthirumalpur.
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-bottom">
+    <p>
+      © Sri Sri Sri Bhunela Sametha Sri Venkateshwara Swamy Devasthanam<br>
+      🌐 <a href="https://www.devalthirumalapurdevasthanam.com">
+      www.devalthirumalapurdevasthanam.com</a>
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
