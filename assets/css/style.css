@@ -111,6 +111,29 @@ nav a { margin:5px; text-decoration:none; }
   background:#16202a;
   font-size:14px;
 }
+/* ===== LANGUAGE SWITCH ===== */
+.lang-switch{
+  display:flex;
+  background:#e8dfcf;
+  border-radius:30px;
+  padding:4px;
+}
+
+.lang-switch button{
+  border:none;
+  background:transparent;
+  padding:6px 14px;
+  border-radius:20px;
+  font-weight:600;
+  cursor:pointer;
+  color:#3a2a18;
+  transition:all .25s ease;
+}
+
+.lang-switch button.active{
+  background:#c9a24d;
+  color:#fff;
+}
 
 .footer-bottom a{
   color:#f5c46b;
