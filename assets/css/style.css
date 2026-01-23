@@ -25,12 +25,26 @@ header h2{
   color:#ffffff;
 }
 nav a{
-  color:#fff6e0;
+  text-decoration:none;          /* ❌ removes underline */
+  color:#fff8e6;
+  padding:8px 14px;
+  margin:0 4px;
+  border-radius:6px;
   font-weight:600;
+  transition:all .25s ease;
+  display:inline-block;
 }
+
 nav a:hover{
-  color:#ffe08a;
+  background:rgba(255,255,255,0.18);
+  color:#ffffff;
 }
+nav a.active{
+  background:#ffd56a;
+  color:#7a2c0c;
+  box-shadow:0 3px 8px rgba(0,0,0,.25);
+}
+
 
 .hero{
   background:
