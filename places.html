@@ -2,13 +2,156 @@
 <html lang="te">
 <head>
 <meta charset="UTF-8">
-<title>Available Places</title>
+<title>Available Places | Devalthirumalapur Devasthanam</title>
 <link rel="stylesheet" href="assets/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<h2>లభ్యమయ్యే ప్రదేశాలు</h2>
-<p>దేవస్థానానికి సంబంధించిన దర్శనీయ ప్రదేశాల వివరాలు త్వరలో అందుబాటులో ఉంటాయి.</p>
+<!-- ===== HEADER / NAVIGATION ===== -->
+<header class="ttd-header">
+  <nav class="ttd-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="donations.html">Donations</a>
+    <a href="places.html" class="active">Available Places</a>
+    <a href="notifications.html">News & Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="media.html">Media Room</a>
+    <a href="library.html">Library</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+  <!-- ===== PAGE BANNER ===== -->
+<section class="page-banner">
+
+  <div class="lang-te">
+    <h1>లభ్యమయ్యే ప్రదేశాలు</h1>
+    <p>
+      దేవస్థానానికి సంబంధించి దర్శనీయమైన ముఖ్యమైన ప్రదేశాలు క్రింద ఇవ్వబడ్డాయి.
+    </p>
+  </div>
+
+  <div class="lang-en hidden">
+    <h1>Available Places</h1>
+    <p>
+      Important pilgrimage and tourist places associated with the Devasthanam.
+    </p>
+  </div>
+
+</section>
+
+<!-- ===== PLACES SECTION ===== -->
+<section class="places-section">
+
+  <!-- Tabs -->
+  <div class="places-tabs">
+    <button class="tab active" onclick="showPlace('umamaheshwaram')">Umamaheshwaram</button>
+    <button class="tab" onclick="showPlace('srisailam')">Srisailam</button>
+    <button class="tab" onclick="showPlace('nagarjuna')">Nagarjuna Sagar</button>
+    <button class="tab" onclick="showPlace('somasila')">Somasila</button>
+    <button class="tab" onclick="showPlace('dindi')">Dindi Reservoir</button>
+  </div>
+
+  <!-- Umamaheshwaram -->
+  <div class="place-content active" id="umamaheshwaram">
+    <div class="lang-te">
+      <h2>🛕 ఉమామహేశ్వరం</h2>
+      <p>
+        ఉమామహేశ్వర ఆలయం ఒక ప్రముఖ శైవ పుణ్యక్షేత్రం.
+        ప్రశాంతమైన ప్రకృతి మధ్యలో ఉన్న ఈ ఆలయం భక్తులకు ఆధ్యాత్మిక శాంతిని అందిస్తుంది.
+      </p>
+    </div>
+
+    <div class="lang-en hidden">
+      <h2>🛕 Umamaheshwaram</h2>
+      <p>
+        Umamaheshwaram is an important Shaivite pilgrimage center.
+        Located amidst serene nature, it offers spiritual peace to devotees.
+      </p>
+    </div>
+  </div>
+
+  <!-- Srisailam -->
+  <div class="place-content" id="srisailam">
+    <div class="lang-te">
+      <h2>🛕 శ్రీశైలం</h2>
+      <p>
+        శ్రీశైలం ద్వాదశ జ్యోతిర్లింగాలలో ఒకటి.
+        మల్లికార్జున స్వామి మరియు భ్రమరాంబ దేవి ఆలయాలతో ప్రసిద్ధి చెందింది.
+      </p>
+    </div>
+
+    <div class="lang-en hidden">
+      <h2>🛕 Srisailam</h2>
+      <p>
+        Srisailam is one of the twelve Jyotirlingas of Lord Shiva.
+        Famous for Mallikarjuna Swamy and Goddess Bhramaramba.
+      </p>
+    </div>
+  </div>
+
+  <!-- Nagarjuna Sagar -->
+  <div class="place-content" id="nagarjuna">
+    <div class="lang-te">
+      <h2>🌊 నాగార్జున సాగర్</h2>
+      <p>
+        నాగార్జున సాగర్ భారతదేశంలోని ప్రముఖ జలాశయాలలో ఒకటి.
+        పర్యాటకులకు ప్రసిద్ధి చెందిన ప్రాంతం.
+      </p>
+    </div>
+
+    <div class="lang-en hidden">
+      <h2>🌊 Nagarjuna Sagar</h2>
+      <p>
+        Nagarjuna Sagar is one of the largest reservoirs in India,
+        well known for tourism and scenic beauty.
+      </p>
+    </div>
+  </div>
+
+  <!-- Somasila -->
+  <div class="place-content" id="somasila">
+    <div class="lang-te">
+      <h2>🌊 సోమశిల</h2>
+      <p>
+        సోమశిల జలాశయం ప్రశాంతమైన వాతావరణంతో
+        కుటుంబ పర్యటనలకు అనువైన ప్రదేశం.
+      </p>
+    </div>
+
+    <div class="lang-en hidden">
+      <h2>🌊 Somasila</h2>
+      <p>
+        Somasila reservoir is a calm and peaceful destination,
+        suitable for family visits and nature lovers.
+      </p>
+    </div>
+  </div>
+
+  <!-- Dindi -->
+  <div class="place-content" id="dindi">
+    <div class="lang-te">
+      <h2>🌿 దిండి రిజర్వాయర్</h2>
+      <p>
+        దిండి రిజర్వాయర్ పచ్చని పరిసరాలతో
+        ప్రకృతి ప్రేమికులకు అనువైన ప్రదేశం.
+      </p>
+    </div>
+
+    <div class="lang-en hidden">
+      <h2>🌿 Dindi Reservoir</h2>
+      <p>
+        Dindi Reservoir is surrounded by greenery
+        and is ideal for nature and eco-tourism lovers.
+      </p>
+    </div>
+  </div>
+
+</section>
+
 
 </body>
 </html>
