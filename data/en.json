@@ -48,6 +48,23 @@
   "srisailam_title": "🛕 Srisailam",
   "srisailam_desc": "One of the twelve Jyotirlingas of Lord Shiva.",
   "srisailam_distance": "~120 km",
-  "srisailam_time": "~3–4 hours"
+  "srisailam_time": "~3–4 hours",
+
+  ,
+"nagarjuna_title": "🛕 Nagarjuna Sagar",
+"nagarjuna_desc": "A famous river dam and tourist destination known for Buddhist heritage and scenic beauty.",
+"nagarjuna_distance": "~135 km",
+"nagarjuna_time": "~3–4 hours",
+
+"somasila_title": "🛕 Somasila",
+"somasila_desc": "A historic dam built on the Penna River, offering a calm and spiritual atmosphere.",
+"somasila_distance": "~170 km",
+"somasila_time": "~4–5 hours",
+
+"dindi_title": "🛕 Dindi Reservoir",
+"dindi_desc": "A beautiful reservoir surrounded by forests and hills, ideal for nature lovers.",
+"dindi_distance": "~90 km",
+"dindi_time": "~2.5 hours"
+
 }
 
