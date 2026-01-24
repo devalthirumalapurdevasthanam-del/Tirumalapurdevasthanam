@@ -412,3 +412,66 @@ body{
 .mail{ background:#6a1b9a; }
 .wa{ background:#25d366; }
 
+/* ===== PAGE BANNER ===== */
+.page-banner{
+  background: linear-gradient(to right,#f39c12,#f7c873);
+  padding:40px 20px;
+  text-align:left;
+  color:#3b1d00;
+}
+
+.page-banner h1{
+  font-size:28px;
+  margin-bottom:8px;
+}
+
+.page-banner p{
+  font-size:16px;
+}
+
+/* ===== PLACES SECTION ===== */
+.places-section{
+  padding:40px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* Tabs */
+.places-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:25px;
+}
+
+.places-tabs .tab{
+  padding:10px 16px;
+  border:none;
+  background:#ffe08a;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.places-tabs .tab.active{
+  background:#c0392b;
+  color:#fff;
+}
+
+/* Content */
+.place-content{
+  display:none;
+  background:#fff8e1;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.place-content.active{
+  display:block;
+}
+
+.place-content h2{
+  color:#7a1f0c;
+  margin-bottom:10px;
+}
