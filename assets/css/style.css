@@ -476,3 +476,44 @@ body{
 }
 
 .hidden{display:none;}
+
+/* ===== TTD STYLE TOP BANNER ===== */
+.top-banner {
+  background: radial-gradient(circle at top, #ffd67a, #f0a020, #c84a1c);
+  padding: 12px 0;
+  border-bottom: 4px solid #b03a1a;
+}
+
+.banner-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 120px 1fr 120px;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-logo img {
+  max-height: 90px;
+  width: auto;
+}
+
+.banner-title h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  line-height: 1.3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-inner {
+    grid-template-columns: 80px 1fr 80px;
+  }
+  .banner-title h1 {
+    font-size: 1.1rem;
+  }
+}
+
