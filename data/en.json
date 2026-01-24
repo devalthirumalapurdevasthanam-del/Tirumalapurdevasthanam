@@ -28,3 +28,27 @@
   "contact_title": "Contact & Location",
   "contact_addr": "Sri Sri Sri Bhunela Sametha Sri Venkateshwara Swamy Devasthanam, Devalthirumalpur Village, Pedhakothapally Mandal, Nagarkurnool District, Telangana – India. Nearest Railway Station: Jadcherla. Nearest Airport: Hyderabad (RGIA)."
 }
+{
+  "places_title": "Available Places",
+  "places_desc": "Important pilgrimage and tourist places near the Devasthanam",
+  "place_umamaheshwaram": "Umamaheshwaram",
+  "place_srisailam": "Srisailam",
+  "place_nagarjuna": "Nagarjuna Sagar",
+  "place_somasila": "Somasila",
+  "place_dindi": "Dindi Reservoir",
+
+  "distance": "Distance",
+  "travel_time": "Travel Time",
+  "view_map": "View on Map",
+
+  "umamaheshwaram_title": "🛕 Umamaheshwaram",
+  "umamaheshwaram_desc": "An important Shaivite pilgrimage surrounded by natural beauty.",
+  "umamaheshwaram_distance": "~75 km",
+  "umamaheshwaram_time": "~2 hours",
+
+  "srisailam_title": "🛕 Srisailam",
+  "srisailam_desc": "One of the twelve Jyotirlingas of Lord Shiva.",
+  "srisailam_distance": "~120 km",
+  "srisailam_time": "~3–4 hours"
+}
+
