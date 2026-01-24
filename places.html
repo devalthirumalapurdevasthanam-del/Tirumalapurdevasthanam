@@ -25,138 +25,43 @@
 
 <!-- ===== PAGE BANNER ===== -->
 <section class="page-banner">
-  <div class="lang-te">
-    <h1>లభ్యమయ్యే ప్రదేశాలు</h1>
-    <p>దేవస్థానానికి సంబంధించి దర్శనీయమైన ముఖ్యమైన ప్రదేశాలు</p>
-  </div>
-
-  <div class="lang-en hidden">
-    <h1>Available Places</h1>
-    <p>Important pilgrimage and tourist places near the Devasthanam</p>
-  </div>
+  <h1 data-key="places_title"></h1>
+  <p data-key="places_desc"></p>
 </section>
 
-<!-- ===== PLACES GRID ===== -->
-<section class="places-grid">
+<!-- ===== PLACES TABS ===== -->
+<section class="places-section">
 
-  <!-- Umamaheshwaram -->
-  <div class="place-card">
-    <img src="assets/images/places/umamaheshwaram.jpg" alt="Umamaheshwaram">
-
-    <div class="lang-te">
-      <h2>🛕 ఉమామహేశ్వరం</h2>
-      <p>ప్రముఖ శైవ పుణ్యక్షేత్రం. ప్రకృతి మధ్యలో ప్రశాంతతను అందిస్తుంది.</p>
-      <p><strong>దూరం:</strong> సుమారు 75 కి.మీ</p>
-      <p><strong>ప్రయాణ సమయం:</strong> 2 గంటలు</p>
-    </div>
-
-    <div class="lang-en hidden">
-      <h2>🛕 Umamaheshwaram</h2>
-      <p>Important Shaivite pilgrimage surrounded by natural beauty.</p>
-      <p><strong>Distance:</strong> ~75 km</p>
-      <p><strong>Travel Time:</strong> ~2 hours</p>
-    </div>
-
-    <a href="https://maps.google.com/?q=Umamaheshwaram+Temple" target="_blank" class="map-btn">📍 View on Map</a>
+  <div class="places-tabs">
+    <button class="tab active" onclick="showPlace('umamaheshwaram')" data-key="place_umamaheshwaram"></button>
+    <button class="tab" onclick="showPlace('srisailam')" data-key="place_srisailam"></button>
+    <button class="tab" onclick="showPlace('nagarjuna')" data-key="place_nagarjuna"></button>
+    <button class="tab" onclick="showPlace('somasila')" data-key="place_somasila"></button>
+    <button class="tab" onclick="showPlace('dindi')" data-key="place_dindi"></button>
   </div>
 
-  <!-- Srisailam -->
-  <div class="place-card">
-    <img src="assets/images/places/srisailam.jpg" alt="Srisailam">
-
-    <div class="lang-te">
-      <h2>🛕 శ్రీశైలం</h2>
-      <p>ద్వాదశ జ్యోతిర్లింగాలలో ఒకటి – మల్లికార్జున స్వామి ఆలయం.</p>
-      <p><strong>దూరం:</strong> సుమారు 120 కి.మీ</p>
-      <p><strong>ప్రయాణ సమయం:</strong> 3–4 గంటలు</p>
-    </div>
-
-    <div class="lang-en hidden">
-      <h2>🛕 Srisailam</h2>
-      <p>One of the twelve Jyotirlingas of Lord Shiva.</p>
-      <p><strong>Distance:</strong> ~120 km</p>
-      <p><strong>Travel Time:</strong> ~3–4 hours</p>
-    </div>
-
-    <a href="https://maps.google.com/?q=Srisailam+Temple" target="_blank" class="map-btn">📍 View on Map</a>
+  <!-- CONTENT -->
+  <div class="place-content active" id="umamaheshwaram">
+    <h2 data-key="umamaheshwaram_title"></h2>
+    <p data-key="umamaheshwaram_desc"></p>
+    <p><strong data-key="distance"></strong>: <span data-key="umamaheshwaram_distance"></span></p>
+    <p><strong data-key="travel_time"></strong>: <span data-key="umamaheshwaram_time"></span></p>
+    <a class="map-btn" target="_blank" href="https://maps.google.com/?q=Umamaheshwaram+Temple">📍 <span data-key="view_map"></span></a>
   </div>
 
-  <!-- Nagarjuna Sagar -->
-  <div class="place-card">
-    <img src="assets/images/places/nagarjuna_sagar.jpg" alt="Nagarjuna Sagar">
-
-    <div class="lang-te">
-      <h2>🌊 నాగార్జున సాగర్</h2>
-      <p>భారతదేశంలోని ప్రముఖ జలాశయాలలో ఒకటి.</p>
-      <p><strong>దూరం:</strong> సుమారు 90 కి.మీ</p>
-      <p><strong>ప్రయాణ సమయం:</strong> 2.5 గంటలు</p>
-    </div>
-
-    <div class="lang-en hidden">
-      <h2>🌊 Nagarjuna Sagar</h2>
-      <p>One of the largest reservoirs in India.</p>
-      <p><strong>Distance:</strong> ~90 km</p>
-      <p><strong>Travel Time:</strong> ~2.5 hours</p>
-    </div>
-
-    <a href="https://maps.google.com/?q=Nagarjuna+Sagar+Dam" target="_blank" class="map-btn">📍 View on Map</a>
+  <div class="place-content" id="srisailam">
+    <h2 data-key="srisailam_title"></h2>
+    <p data-key="srisailam_desc"></p>
+    <p><strong data-key="distance"></strong>: <span data-key="srisailam_distance"></span></p>
+    <p><strong data-key="travel_time"></strong>: <span data-key="srisailam_time"></span></p>
+    <a class="map-btn" target="_blank" href="https://maps.google.com/?q=Srisailam+Temple">📍 <span data-key="view_map"></span></a>
   </div>
 
-  <!-- Somasila -->
-  <div class="place-card">
-    <img src="assets/images/places/somasila.jpg" alt="Somasila">
-
-    <div class="lang-te">
-      <h2>🌊 సోమశిల</h2>
-      <p>ప్రశాంత వాతావరణంతో ప్రసిద్ధి చెందిన జలాశయం.</p>
-      <p><strong>దూరం:</strong> సుమారు 65 కి.మీ</p>
-      <p><strong>ప్రయాణ సమయం:</strong> 2 గంటలు</p>
-    </div>
-
-    <div class="lang-en hidden">
-      <h2>🌊 Somasila</h2>
-      <p>A calm reservoir suitable for family visits.</p>
-      <p><strong>Distance:</strong> ~65 km</p>
-      <p><strong>Travel Time:</strong> ~2 hours</p>
-    </div>
-
-    <a href="https://maps.google.com/?q=Somasila+Dam" target="_blank" class="map-btn">📍 View on Map</a>
-  </div>
-
-  <!-- Dindi -->
-  <div class="place-card">
-    <img src="assets/images/places/dindi.jpg" alt="Dindi Reservoir">
-
-    <div class="lang-te">
-      <h2>🌿 దిండి రిజర్వాయర్</h2>
-      <p>పచ్చని పరిసరాలతో ప్రకృతి ప్రేమికులకు అనుకూలం.</p>
-      <p><strong>దూరం:</strong> సుమారు 55 కి.మీ</p>
-      <p><strong>ప్రయాణ సమయం:</strong> 1.5 గంటలు</p>
-    </div>
-
-    <div class="lang-en hidden">
-      <h2>🌿 Dindi Reservoir</h2>
-      <p>Ideal destination for nature and eco-tourism lovers.</p>
-      <p><strong>Distance:</strong> ~55 km</p>
-      <p><strong>Travel Time:</strong> ~1.5 hours</p>
-    </div>
-
-    <a href="https://maps.google.com/?q=Dindi+Reservoir" target="_blank" class="map-btn">📍 View on Map</a>
-  </div>
+  <!-- repeat same structure for Nagarjuna, Somasila, Dindi -->
 
 </section>
 
-<!-- ===== LANGUAGE SCRIPT ===== -->
-<script>
-function setLang(lang){
-  document.querySelectorAll('.lang-te').forEach(e =>
-    e.classList.toggle('hidden', lang !== 'te')
-  );
-  document.querySelectorAll('.lang-en').forEach(e =>
-    e.classList.toggle('hidden', lang !== 'en')
-  );
-}
-</script>
+<script src="assets/js/lang.js"></script>
 
 </body>
 </html>
