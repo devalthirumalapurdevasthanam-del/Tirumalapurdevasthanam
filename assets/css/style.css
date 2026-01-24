@@ -52,7 +52,7 @@ nav a.active{
       rgba(0,0,0,0.45),
       rgba(0,0,0,0.45)
     ),
-    url("../images/main_temple1.jpeg") center center / cover no-repeat;
+    url("../images/main_temple2.jpeg") center center / cover no-repeat;
 
   width:100%;
   min-height:520px;          /* 🔑 makes image LARGE */
