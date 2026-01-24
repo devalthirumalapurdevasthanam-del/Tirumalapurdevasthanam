@@ -339,3 +339,28 @@ section.gallery-section{
 body{
   padding-top:55px;
 }
+.btn-primary{
+  display:inline-block;
+  margin-top:12px;
+  padding:8px 16px;
+  background:#c96b1c;
+  color:#fff;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.btn-primary:hover{
+  background:#a85614;
+}
+
+.btn-secondary{
+  display:inline-block;
+  margin-left:8px;
+  padding:8px 14px;
+  background:#25D366;
+  color:#fff;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+}
