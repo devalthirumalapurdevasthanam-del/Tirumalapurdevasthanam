@@ -537,4 +537,31 @@ body{
   object-fit: contain;
 }
 
+.temples-list{
+  max-width:1200px;
+  margin:40px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+}
+
+.temple-card{
+  background:#fff7e6;
+  border-radius:14px;
+  padding:22px;
+  text-decoration:none;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  transition:.3s ease;
+}
+
+.temple-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 28px rgba(0,0,0,.15);
+}
+
+.temple-card h3{
+  color:#9b2c00;
+  margin-bottom:8px;
+}
 
