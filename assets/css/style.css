@@ -517,3 +517,24 @@ body{
   }
 }
 
+/* ===== TOP BANNER FIX ===== */
+.top-banner {
+  background: linear-gradient(to right, #f6b73c, #f9d976);
+  padding: 10px 0;
+}
+
+.banner-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-logo img {
+  width: 120px;          /* 👈 CONTROL SIZE HERE */
+  height: 120px;
+  object-fit: contain;
+}
+
+
