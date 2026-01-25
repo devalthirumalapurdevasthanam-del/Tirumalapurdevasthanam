@@ -2,10 +2,14 @@
 <html lang="te">
 <head>
 <meta charset="UTF-8">
-<title>About Temple</title>
+<title data-key="about_title">About Temple</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/lang.js" defer></script>
 </head>
+
 <body>
+
 <!-- Background Bhakti Audio -->
 <audio id="bg-audio" loop>
   <source src="assets/audio/om_namo_venkatesaya.mp3" type="audio/mpeg">
@@ -21,37 +25,34 @@
 <div class="top-banner">
   <div class="banner-inner">
 
-    <!-- Left Logo -->
     <div class="banner-logo left">
       <img src="assets/images/logo-left.png" alt="Temple Logo">
     </div>
 
-    <!-- Center Title -->
     <div class="banner-title">
       <h1 data-key="site_title"></h1>
     </div>
 
-    <!-- Right Logo -->
     <div class="banner-logo right">
       <img src="assets/images/logo-right.png" alt="Deity Image">
     </div>
 
   </div>
 </div>
-  
+
+<!-- ===== NAVIGATION ===== -->
 <header>
   <nav class="ttd-nav">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="donations.html">Donations</a>
-  <a href="available-temples.html">Available Temples</a>
-  <a href="notifications.html">News & Events</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="media.html">Media Room</a>
-  <a href="library.html">Library</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="donations.html">Donations</a>
+    <a href="available-temples.html">Available Temples</a>
+    <a href="notifications.html">News & Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="media.html">Media Room</a>
+    <a href="library.html">Library</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
   <div class="lang-switch simple">
     <button onclick="setLang('te')" id="btn-te">తెలుగు</button>
@@ -59,10 +60,36 @@
   </div>
 </header>
 
-<h1 data-key="about_title"></h1>
-<p data-key="about_full"></p>
+<!-- ===== PAGE BANNER ===== -->
+<section class="page-banner">
+  <h1 data-key="about_title"></h1>
+  <p data-key="about_full"></p>
+</section>
 
-<script src="assets/js/lang.js"></script>
+<!-- ===== ABOUT CONTENT ===== -->
+<section class="about-section">
+
+  <div class="about-card">
+    <h2 data-key="about_section1_title"></h2>
+    <p data-key="about_section1_desc"></p>
+  </div>
+
+  <div class="about-card">
+    <h2 data-key="about_section2_title"></h2>
+    <p data-key="about_section2_desc"></p>
+  </div>
+
+  <div class="about-card">
+    <h2 data-key="about_section3_title"></h2>
+    <p data-key="about_section3_desc"></p>
+  </div>
+
+  <div class="about-card">
+    <h2 data-key="about_section4_title"></h2>
+    <p data-key="about_section4_desc"></p>
+  </div>
+
+</section>
 
 </body>
 </html>
