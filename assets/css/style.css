@@ -636,4 +636,29 @@ body{
   padding: 8px 16px;
   font-size: 14px;
 }
+.about-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.about-card {
+  background: #fff7e6;
+  border-left: 6px solid #e68a00;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.about-card h2 {
+  color: #9b3c00;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
 
