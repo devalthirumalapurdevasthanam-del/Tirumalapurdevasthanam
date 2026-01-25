@@ -1,14 +1,28 @@
 async function setLang(lang) {
-  const res = await fetch(`data/${lang}.json`);
-  const data = await res.json();
+  try {
+    const res = await fetch(`data/${lang}.json`);
+    const data = await res.json();
 
-  document.querySelectorAll("[data-key]").forEach(el => {
-    const key = el.getAttribute("data-key");
-    if (data[key]) el.textContent = data[key];
-  });
+    // Update all text using data-key
+    document.querySelectorAll("[data-key]").forEach(el => {
+      const key = el.getAttribute("data-key");
+      if (data[key]) {
+        el.textContent = data[key];
+      }
+    });
 
-  localStorage.setItem("lang", lang);
-  updateLangButtons(lang);
+    // IMPORTANT: set html lang attribute (for Telugu styling)
+    document.documentElement.setAttribute("lang", lang);
+
+    // Save preference
+    localStorage.setItem("lang", lang);
+
+    // Update active button
+    updateLangButtons(lang);
+
+  } catch (err) {
+    console.error("Language load error:", err);
+  }
 }
 
 function updateLangButtons(lang) {
@@ -22,7 +36,8 @@ function updateLangButtons(lang) {
   if (lang === "en" && en) en.classList.add("active");
 }
 
+// Load saved language on page load
 document.addEventListener("DOMContentLoaded", () => {
-  const lang = localStorage.getItem("lang") || "te";
-  setLang(lang);
+  const savedLang = localStorage.getItem("lang") || "te";
+  setLang(savedLang);
 });
