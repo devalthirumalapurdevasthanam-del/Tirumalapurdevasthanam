@@ -661,4 +661,39 @@ body{
   line-height: 1.7;
   color: #333;
 }
+/* ===== LANGUAGE BASED TYPOGRAPHY ===== */
+
+/* Default (English) */
+html[lang="en"] body {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 16px;
+}
+
+/* Telugu Styling */
+html[lang="te"] body {
+  font-family: "Noto Serif Telugu", serif;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+/* Telugu Headings */
+html[lang="te"] h1,
+html[lang="te"] h2,
+html[lang="te"] h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+/* About Section Telugu Cards */
+html[lang="te"] .about-card p {
+  font-size: 18px;
+  line-height: 2;
+}
+
+/* English Cards */
+html[lang="en"] .about-card p {
+  font-size: 16px;
+  line-height: 1.7;
+}
 
