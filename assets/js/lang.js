@@ -28,33 +28,27 @@ function updateLangButtons(lang) {
 document.addEventListener("DOMContentLoaded", () => {
   const audio = document.getElementById("bg-audio");
   const toggle = document.getElementById("audio-toggle");
-
   if (!audio || !toggle) return;
 
   let muted = localStorage.getItem("audioMuted") === "true";
-
   audio.muted = muted;
   toggle.textContent = muted ? "🔇" : "🔊";
 
-  // 🔔 Start audio AFTER first user click
-  const startAudioOnce = () => {
-    if (!muted && audio.paused) {
+  // First user interaction unlocks audio
+  document.body.addEventListener("click", () => {
+    if (!audio.muted) {
       audio.play().catch(() => {});
     }
-    document.removeEventListener("click", startAudioOnce);
-  };
-
-  document.addEventListener("click", startAudioOnce);
+  }, { once: true });
 
   toggle.addEventListener("click", (e) => {
     e.stopPropagation();
-    muted = !muted;
-    audio.muted = muted;
-    toggle.textContent = muted ? "🔇" : "🔊";
-    localStorage.setItem("audioMuted", muted);
-
-    if (!muted) audio.play().catch(() => {});
+    audio.muted = !audio.muted;
+    toggle.textContent = audio.muted ? "🔇" : "🔊";
+    localStorage.setItem("audioMuted", audio.muted);
+    if (!audio.muted) audio.play().catch(()=>{});
   });
+});
 
   // Load language
   const lang = localStorage.getItem("lang") || "te";
