@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="te">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<title>Temple Gallery</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Temple Gallery</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="assets/js/lang.js" defer></script>
 </head>
 
 <body>
-<!-- Background Bhakti Audio -->
+
+<!-- ===== BACKGROUND BHAKTI AUDIO ===== -->
 <audio id="bg-audio" loop>
   <source src="assets/audio/om_namo_venkatesaya.mp3" type="audio/mpeg">
 </audio>
@@ -19,45 +24,40 @@
   <button id="audio-toggle" title="Mute / Unmute">🔊</button>
 </div>
 
-
-<!-- ===== TOP TTD STYLE BANNER ===== -->
+<!-- ===== TOP BANNER ===== -->
 <div class="top-banner">
   <div class="banner-inner">
-
-    <!-- Left Logo -->
     <div class="banner-logo left">
       <img src="assets/images/logo-left.png" alt="Temple Logo">
     </div>
 
-    <!-- Center Title -->
     <div class="banner-title">
       <h1 data-key="site_title"></h1>
     </div>
 
-    <!-- Right Logo -->
     <div class="banner-logo right">
       <img src="assets/images/logo-right.png" alt="Deity Image">
     </div>
-
   </div>
 </div>
-  
+
+<!-- ===== NAV ===== -->
 <header>
   <nav class="ttd-nav">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="donations.html">Donations</a>
-  <a href="available-temples.html">Available Temples</a>
-  <a href="notifications.html">News & Events</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="media.html">Media Room</a>
-  <a href="library.html">Library</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="donations.html">Donations</a>
+    <a href="available-temples.html">Available Temples</a>
+    <a href="notifications.html">News & Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="media.html">Media Room</a>
+    <a href="library.html">Library</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<section>
+<!-- ===== GALLERY SECTION ===== -->
+<section class="gallery-section">
   <h1>Divine Gallery</h1>
   <p>
     Sacred moments from festivals, utsavams, alankarams,
@@ -65,9 +65,16 @@
   </p>
 
   <div class="gallery-grid">
-    <img src="assets/images/gallery/img1.jpg" alt="Temple Gal
-  <section class="gallery-section">
+    <img src="assets/images/gallery/img.jpeg" alt="Temple View">
+    <img src="assets/images/gallery/img1.jpeg" alt="Festival">
+    <img src="assets/images/gallery/img2.jpeg" alt="Alankaram">
+    <img src="assets/images/gallery/img3.jpeg" alt="Utsavam">
+    <img src="assets/images/gallery/img4.jpeg" alt="Pooja">
+    <img src="assets/images/gallery/img5.jpeg" alt="Temple Event">
+  </div>
+</section>
 
+<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="footer-container">
 
@@ -83,11 +90,9 @@
       <h4>Quick Links</h4>
       <ul>
         <li><a href="about.html">About Temple</a></li>
-        <li><a href="sevas.html">Sevas</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="donations.html">Donations</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="places.html">Nearby Places</a></li>
       </ul>
     </div>
 
@@ -111,8 +116,6 @@
     </p>
   </div>
 </footer>
-    
-<script src="assets/js/lang.js"></script>
 
 </body>
 </html>
