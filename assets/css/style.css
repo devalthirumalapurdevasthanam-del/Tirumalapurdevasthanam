@@ -564,4 +564,55 @@ body{
   color:#9b2c00;
   margin-bottom:8px;
 }
+.notifications-section {
+  padding: 40px;
+  background: #fff7dc;
+}
+
+.notification-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  max-width: 1000px;
+  margin: auto;
+}
+
+.event-title {
+  color: #9c2f00;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.event-dates {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.event-note {
+  text-align: center;
+  background: #fff0c2;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.event-table th,
+.event-table td {
+  border: 1px solid #e0b25b;
+  padding: 10px;
+  text-align: center;
+}
+
+.event-table th {
+  background: #f2b544;
+  color: #000;
+}
 
