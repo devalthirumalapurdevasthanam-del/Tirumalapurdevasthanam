@@ -2,16 +2,20 @@
    LANGUAGE HANDLING
 ======================= */
 async function setLang(lang) {
-  const res = await fetch(`data/${lang}.json`);
-  const data = await res.json();
+  try {
+    const res = await fetch(`data/${lang}.json`);
+    const data = await res.json();
 
-  document.querySelectorAll("[data-key]").forEach(el => {
-    const key = el.getAttribute("data-key");
-    if (data[key]) el.textContent = data[key];
-  });
+    document.querySelectorAll("[data-key]").forEach(el => {
+      const key = el.getAttribute("data-key");
+      if (data[key]) el.textContent = data[key];
+    });
 
-  localStorage.setItem("lang", lang);
-  updateLangButtons(lang);
+    localStorage.setItem("lang", lang);
+    updateLangButtons(lang);
+  } catch (e) {
+    console.error("Language load error:", e);
+  }
 }
 
 function updateLangButtons(lang) {
@@ -25,7 +29,7 @@ function updateLangButtons(lang) {
 /* =======================
    AUDIO HANDLING
 ======================= */
-document.addEventListener("DOMContentLoaded", () => {
+function initAudio() {
   const audio = document.getElementById("bg-audio");
   const toggle = document.getElementById("audio-toggle");
   if (!audio || !toggle) return;
@@ -34,23 +38,31 @@ document.addEventListener("DOMContentLoaded", () => {
   audio.muted = muted;
   toggle.textContent = muted ? "🔇" : "🔊";
 
-  // First user interaction unlocks audio
-  document.body.addEventListener("click", () => {
-    if (!audio.muted) {
-      audio.play().catch(() => {});
-    }
-  }, { once: true });
+  // Browser requires user interaction
+  document.body.addEventListener(
+    "click",
+    () => {
+      if (!audio.muted) {
+        audio.play().catch(() => {});
+      }
+    },
+    { once: true }
+  );
 
-  toggle.addEventListener("click", (e) => {
+  toggle.addEventListener("click", e => {
     e.stopPropagation();
     audio.muted = !audio.muted;
     toggle.textContent = audio.muted ? "🔇" : "🔊";
     localStorage.setItem("audioMuted", audio.muted);
-    if (!audio.muted) audio.play().catch(()=>{});
+    if (!audio.muted) audio.play().catch(() => {});
   });
-});
+}
 
-  // Load language
+/* =======================
+   INIT ON PAGE LOAD
+======================= */
+document.addEventListener("DOMContentLoaded", () => {
   const lang = localStorage.getItem("lang") || "te";
   setLang(lang);
+  initAudio();
 });
