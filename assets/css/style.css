@@ -615,4 +615,25 @@ body{
   background: #f2b544;
   color: #000;
 }
+.upcoming-event {
+  background: #fff9ef;
+  border-left: 6px solid #e28b20;
+}
+
+.upcoming-event .event-name {
+  font-weight: 600;
+  margin: 10px 0 5px;
+  color: #8b2c00;
+}
+
+.upcoming-event .event-date {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.small-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+}
 
