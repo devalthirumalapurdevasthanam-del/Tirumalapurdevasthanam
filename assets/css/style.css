@@ -949,4 +949,28 @@ html[lang="en"] .temple-tagline {
   box-shadow: 0 5px 12px rgba(0,0,0,0.2);
   font-size: 1.1rem;
 }
+/* ===== MOBILE FOOTER CENTER FIX ===== */
+@media (max-width: 768px){
+
+  .site-footer .footer-bottom{
+    display:flex;
+    flex-direction:column;
+    align-items:center !important;
+    justify-content:center;
+    text-align:center !important;
+    padding:16px 10px;
+  }
+
+  .site-footer .footer-follow{
+    text-align:center;
+    width:100%;
+  }
+
+  .site-footer .footer-follow a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin:8px 10px;
+  }
+}
 
