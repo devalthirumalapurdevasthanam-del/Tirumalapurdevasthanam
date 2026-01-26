@@ -185,6 +185,29 @@ nav a.active{
 .footer-bottom .footer-follow a:hover{
   opacity:0.9;
 }
+/* ===== FOOTER BOTTOM CENTER FIX ===== */
+
+.site-footer .footer-bottom{
+  display:flex;
+  flex-direction:column;
+  align-items:center;   /* horizontal center */
+  justify-content:center;
+  text-align:center;
+  padding:20px 10px;
+}
+
+/* Follow us block */
+.site-footer .footer-follow{
+  margin-top:10px;
+}
+
+/* Social links spacing */
+.site-footer .footer-follow a{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin:6px 14px;
+}
 
 /* ===== LANGUAGE SWITCH ===== */
 /* ===== SIMPLE LANGUAGE SWITCH ===== */
@@ -205,10 +228,7 @@ nav a.active{
 }
 
 
-.footer-bottom a{
-  color:#f5c46b;
-  text-decoration:none;
-}
+
 /* ===== MOBILE OPTIMIZATION ===== */
 @media(max-width:768px){
   nav a{
