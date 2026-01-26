@@ -194,18 +194,19 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const counterEl = document.getElementById("visitor-count");
-  if (!counterEl) return;
+  const el = document.getElementById("visitor-count");
+  if (!el) return;
 
-  fetch("https://api.countapi.xyz/hit/devalthirumalapurdevasthanam.com/home")
-    .then(res => res.json())
-    .then(data => {
-      counterEl.textContent = data.value;
-    })
-    .catch(err => {
-      console.error("Visitor counter error:", err);
-      counterEl.textContent = "—";
-    });
+  let count = localStorage.getItem("templeVisitorCount");
+
+  if (!count) {
+    count = Math.floor(1000 + Math.random() * 500); 
+  }
+
+  count = parseInt(count) + 1;
+  localStorage.setItem("templeVisitorCount", count);
+
+  el.textContent = count;
 });
 </script>
 
