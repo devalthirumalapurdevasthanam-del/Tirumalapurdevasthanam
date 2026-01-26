@@ -760,5 +760,66 @@ html[lang="en"] .about-card p {
   max-height: 90%;
   border-radius: 12px;
 }
+/* ===============================
+   LIBRARY SECTION
+================================ */
+.library-section {
+  padding: 40px 8%;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.library-card {
+  background: #fff8e6;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  transition: transform 0.3s ease;
+}
+
+.library-card:hover {
+  transform: translateY(-6px);
+}
+
+.library-card h3 {
+  font-family: 'Noto Serif Telugu', serif;
+  color: #6b2a00;
+  margin-bottom: 10px;
+}
+
+.library-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #3a2a1a;
+}
+
+.library-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn-read,
+.btn-download {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn-read {
+  background: #b45309;
+  color: #fff;
+}
+
+.btn-download {
+  background: #2563eb;
+  color: #fff;
+}
 
 
