@@ -973,4 +973,29 @@ html[lang="en"] .temple-tagline {
     margin:8px 10px;
   }
 }
+.home-credits{
+  text-align:center;
+  padding:25px 15px;
+  font-size:14px;
+  color:#e5e7eb;
+  background:rgba(0,0,0,0.15);
+}
+
+.home-credits p{
+  margin:6px 0;
+}
+
+.home-credits strong{
+  color:#facc15; /* temple gold */
+}
+
+.home-credits a{
+  color:#93c5fd;
+  text-decoration:none;
+}
+
+.home-credits a:hover{
+  text-decoration:underline;
+}
+
 
