@@ -155,38 +155,35 @@ nav a.active{
   color:#f5c46b;
 }
 
-.footer-bottom{
-  text-align:center;
-  padding:20px;
-  font-size:15px;
-  background:#0f172a;
-  color:#e5e7eb;
-}
+/* ===== FOOTER SOCIAL FIX ===== */
 
 .footer-bottom a{
-  text-decoration:none;
-  margin:0 10px;
+  text-decoration:none !important;
+}
+
+/* Icon color (gold – temple theme) */
+.footer-bottom .footer-follow a{
+  color:#facc15;
+  font-size:16px;
   font-weight:600;
-  font-size:15px;
-  transition:0.3s;
+  margin:0 14px;
 }
 
 /* YouTube red text */
-.social-text.youtube{
-  color:#ff0000;
+.footer-bottom .footer-yt span{
+  color:#ff0000 !important;
 }
 
-/* Instagram gradient text */
-.social-text.instagram{
+/* Instagram app gradient text */
+.footer-bottom .footer-ig span{
   background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
 
 /* Hover effect */
-.footer-bottom a:hover{
-  opacity:0.8;
-  transform:translateY(-2px);
+.footer-bottom .footer-follow a:hover{
+  opacity:0.9;
 }
 
 /* ===== LANGUAGE SWITCH ===== */
