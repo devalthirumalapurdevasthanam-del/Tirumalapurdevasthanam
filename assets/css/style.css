@@ -806,3 +806,31 @@ html[lang="en"] .about-card p {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 10px 22px rgba(29,78,216,0.6);
 }
+/* ===============================
+   TEMPLE TAGLINE (LANG TOGGLE)
+================================ */
+
+.temple-tagline {
+  margin-top: 6px;
+  font-family: 'Noto Serif Telugu', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7c2d12; /* deep maroon */
+  text-align: center;
+  letter-spacing: 0.4px;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.7);
+}
+
+/* English font refinement */
+html[lang="en"] .temple-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .temple-tagline {
+    font-size: 15px;
+  }
+}
+
