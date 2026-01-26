@@ -53,6 +53,33 @@
 <h1 data-key="goshala_title"></h1>
 <p data-key="goshala_desc"></p>
 
+<!-- ===== GOSHALA PHOTO GALLERY ===== -->
+<section class="goshala-gallery">
+
+  <h2 class="section-title">
+    🐄 ఆలయ గోశాల చిత్రాలు
+  </h2>
+
+  <div class="gallery-grid">
+
+    <img src="assets/images/goshala/goshala1.jpg" alt="Goshala Image 1" onclick="openLightbox(this)">
+    <img src="assets/images/goshala/goshala2.jpg" alt="Goshala Image 2" onclick="openLightbox(this)">
+    <img src="assets/images/goshala/goshala3.jpg" alt="Goshala Image 3" onclick="openLightbox(this)">
+    <img src="assets/images/goshala/goshala4.jpg" alt="Goshala Image 4" onclick="openLightbox(this)">
+    <img src="assets/images/goshala/goshala5.jpg" alt="Goshala Image 5" onclick="openLightbox(this)">
+    <img src="assets/images/goshala/goshala6.jpg" alt="Goshala Image 6" onclick="openLightbox(this)">
+    <img src="assets/images/goshala/goshala7.jpg" alt="Goshala Image 7" onclick="openLightbox(this)">
+    <img src="assets/images/goshala/goshala8.jpg" alt="Goshala Image 8" onclick="openLightbox(this)">
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+
 <footer class="site-footer">
   <div class="footer-container">
 
@@ -96,7 +123,20 @@
     </p>
   </div>
 </footer>
-  
+
+<script>
+function openLightbox(img) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  lightboxImg.src = img.src;
+  lightbox.style.display = "flex";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
 <script src="assets/js/lang.js"></script>
 
 </body>
