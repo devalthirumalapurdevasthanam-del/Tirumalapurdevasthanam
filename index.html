@@ -139,8 +139,12 @@
     Devalthirumalpur Village
   </a>
 </p>
-
   </div>
+  <div class="visitor-counter">
+  🙏 <span data-key="visitor_label">Visitors</span> :
+  <span id="visitor-count">Loading...</span>
+</div>
+
 </section>
 
   
@@ -187,6 +191,18 @@
     </p>
   </div>
 </footer>
+
+<script>
+fetch("https://api.countapi.xyz/hit/devalthirumalapurdevasthanam/home")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("visitor-count").innerText = data.value;
+  })
+  .catch(() => {
+    document.getElementById("visitor-count").innerText = "—";
+  });
+</script>
+
 
 <script src="assets/js/lang.js"></script>
 
