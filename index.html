@@ -194,10 +194,10 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const el = document.getElementById("visitor-count");
+  const el = document.getElementById("visitor-count_v1");
   if (!el) return;
 
-  let count = localStorage.getItem("templeVisitorCount");
+  let count = localStorage.getItem("templeVisitorCount_v1");
 
   if (!count) {
     count = Math.floor(1000 + Math.random() * 500); 
