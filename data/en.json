@@ -128,6 +128,9 @@
 "media_facebook": "Facebook Live",
 "media_instagram": "Instagram Updates",
 "media_email": "Gmail Contact",
-"media_whatsapp": "WhatsApp Devotees Group"
+"media_whatsapp": "WhatsApp Devotees Group",
+
+"location_map_title": "Location Map",
+"view_on_google_maps": "View on Google Maps"
 }
 
