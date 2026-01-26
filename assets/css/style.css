@@ -833,4 +833,36 @@ html[lang="en"] .temple-tagline {
     font-size: 15px;
   }
 }
+/* ===============================
+   MAP SECTION
+================================ */
+
+.map-section {
+  padding: 40px 20px;
+}
+
+.map-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff7ed;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.map-link {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.map-link a {
+  color: #7c2d12;
+  text-decoration: none;
+}
+
+.map-link a:hover {
+  text-decoration: underline;
+}
 
