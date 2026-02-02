@@ -100,8 +100,17 @@ let seconds = 45;
 const timerEl = document.getElementById("timer");
 const bell = document.getElementById("bellSound");
 
-// Keep bell soft (important if it rings often)
+// Keep bell pleasant
 bell.volume = 0.4;
+
+/*
+  Browser autoplay rule:
+  Audio must be unlocked by user interaction once.
+  This enables bell to play from the start.
+*/
+document.addEventListener("click", () => {
+  bell.play().catch(() => {});
+}, { once: true });
 
 const countdown = setInterval(() => {
   seconds--;
