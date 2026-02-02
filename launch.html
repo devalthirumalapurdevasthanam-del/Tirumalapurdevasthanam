@@ -95,18 +95,20 @@ body{
   <source src="assets/audio/bell.mp3" type="audio/mpeg">
 </audio>
 
-<!-- Countdown Script -->
 <script>
 let seconds = 45;
 const timerEl = document.getElementById("timer");
 const bell = document.getElementById("bellSound");
 
+// Keep bell soft (important if it rings often)
+bell.volume = 0.4;
+
 const countdown = setInterval(() => {
   seconds--;
   timerEl.innerText = seconds;
 
-  // 🔔 Ring bell in last 5 seconds
-  if (seconds <= 40 && seconds > 0) {
+  // 🔔 Ring bell from start onwards
+  if (seconds > 0) {
     bell.currentTime = 0;
     bell.play().catch(() => {});
   }
@@ -117,6 +119,7 @@ const countdown = setInterval(() => {
   }
 }, 1000);
 </script>
+
 
 <!-- Flower Generator -->
 <script>
