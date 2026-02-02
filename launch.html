@@ -56,7 +56,7 @@ body{
 
 .card p{
   font-size:16px;
-  margin-bottom:25px;
+  margin-bottom:18px;
 }
 
 .timer{
@@ -71,34 +71,45 @@ body{
 
 <!-- Launch Content -->
 <div class="card">
- <h1>🙏 Sri Sri Sri Bhunela Sametha</h1>
-<h2>Sri Venkateshwara Swamy Devasthanam</h2>
+  <h1>🙏 Sri Sri Sri Bhunela Sametha</h1>
+  <h2>Sri Venkateshwara Swamy Devasthanam</h2>
 
-<p style="font-size:18px; font-weight:bold; color:#8b0000;">
-  Grand Opening of Our Temple Website
-</p>
+  <p style="font-size:18px; font-weight:bold; color:#8b0000;">
+    Grand Opening of Our Temple Website
+  </p>
 
-<p style="font-size:15px;">
-  With the divine blessings of Lord Sri Venkateshwara Swamy,
-  we are delighted to inaugurate our official temple website.
-</p>
+  <p style="font-size:15px;">
+    With the divine blessings of Lord Sri Venkateshwara Swamy,
+    we are delighted to inaugurate our official temple website.
+  </p>
 
-<p style="font-style:italic;">
-  If possible, Tirupati. If not, Thirumalapuram
-</p>
+  <p style="font-style:italic;">
+    If possible, Tirupati. If not, Thirumalapuram
+  </p>
 
-<div class="timer" id="timer">45</div>
-
+  <div class="timer" id="timer">45</div>
 </div>
+
+<!-- 🔔 Bell Sound -->
+<audio id="bellSound" preload="auto">
+  <source src="assets/audio/bell.mp3" type="audio/mpeg">
+</audio>
 
 <!-- Countdown Script -->
 <script>
-let seconds = 30;
+let seconds = 45;
 const timerEl = document.getElementById("timer");
+const bell = document.getElementById("bellSound");
 
 const countdown = setInterval(() => {
   seconds--;
   timerEl.innerText = seconds;
+
+  // 🔔 Ring bell in last 5 seconds
+  if (seconds <= 5 && seconds > 0) {
+    bell.currentTime = 0;
+    bell.play().catch(() => {});
+  }
 
   if (seconds <= 0) {
     clearInterval(countdown);
