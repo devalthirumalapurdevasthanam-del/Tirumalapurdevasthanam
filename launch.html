@@ -106,7 +106,7 @@ const countdown = setInterval(() => {
   timerEl.innerText = seconds;
 
   // 🔔 Ring bell in last 5 seconds
-  if (seconds <= 44 && seconds > 0) {
+  if (seconds <= 40 && seconds > 0) {
     bell.currentTime = 0;
     bell.play().catch(() => {});
   }
