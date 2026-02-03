@@ -148,6 +148,31 @@
   </div>
 
 </section>
+
+<!-- WEBSITE LAUNCH PHOTOS -->
+<section class="simple-folder-section">
+
+  <h2 class="simple-title">Website Launch Event</h2>
+  <p class="simple-subtitle">
+    శ్రీ శ్రీ శ్రీ భూనేల సమేత శ్రీ వెంకటేశ్వర స్వామి దేవస్థానం – వెబ్‌సైట్ ప్రారంభోత్సవం
+  </p>
+
+  <!-- Folder Image -->
+  <div class="folder-box" onclick="togglePhotos()">
+    <img src="assets/images/web1.jpeg" alt="Website Launch Folder">
+    <p>📁 Click to open photos</p>
+  </div>
+
+  <!-- Hidden Photos -->
+  <div class="simple-gallery" id="simpleGallery">
+    <img src="assets/images/web1.jpeg">
+    <img src="assets/images/web2.jpeg">
+    <img src="assets/images/web3.jpeg">
+    <img src="assets/images/web4.jpeg">
+  </div>
+
+</section>
+
 <footer class="site-footer">
   <div class="footer-container">
 
@@ -191,6 +216,15 @@
     </p>
   </div>
 </footer>
+
+<script>
+function togglePhotos() {
+  const gallery = document.getElementById("simpleGallery");
+  gallery.style.display =
+    gallery.style.display === "grid" ? "none" : "grid";
+}
+</script>
+
 <script src="assets/js/lang.js"></script>
 
 </body>
