@@ -1054,5 +1054,50 @@ html[lang="en"] .temple-tagline {
     height: 180px;
   }
 }
+/* Lightbox Zoom & Slide */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  text-align: center;
+}
+
+.lightbox img {
+  max-width: 92%;
+  max-height: 85vh;
+  margin-top: 60px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox-controls {
+  margin-top: 20px;
+}
+
+.lightbox-controls button {
+  font-size: 26px;
+  padding: 6px 16px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .lightbox img {
+    max-width: 95%;
+    margin-top: 80px;
+  }
+}
 
 
