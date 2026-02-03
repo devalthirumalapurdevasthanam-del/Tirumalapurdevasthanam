@@ -165,11 +165,11 @@
 
   <!-- Hidden Photos -->
   <div class="simple-gallery" id="simpleGallery">
-    <img src="assets/images/web1.jpeg">
-    <img src="assets/images/web2.jpeg">
-    <img src="assets/images/web3.jpeg">
-    <img src="assets/images/web4.jpeg">
-  </div>
+  <img src="assets/images/web1.jpeg" onclick="openLightbox(0)">
+  <img src="assets/images/web2.jpeg" onclick="openLightbox(1)">
+  <img src="assets/images/web3.jpeg" onclick="openLightbox(2)">
+  <img src="assets/images/web4.jpeg" onclick="openLightbox(3)">
+</div>
 
 </section>
 
@@ -224,6 +224,52 @@ function togglePhotos() {
     gallery.style.display === "grid" ? "none" : "grid";
 }
 </script>
+
+<!-- IMAGE LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox" onclick="closeLightbox()">×</span>
+
+  <img id="lightboxImage">
+
+  <div class="lightbox-controls">
+    <button onclick="prevImage()">⟨</button>
+    <button onclick="nextImage()">⟩</button>
+  </div>
+</div>
+<script>
+const galleryImages = [
+  "assets/images/web1.jpeg",
+  "assets/images/web2.jpeg",
+  "assets/images/web3.jpeg",
+  "assets/images/web4.jpeg"
+];
+
+let currentImageIndex = 0;
+
+function openLightbox(index) {
+  currentImageIndex = index;
+  document.getElementById("lightboxImage").src = galleryImages[index];
+  document.getElementById("lightbox").style.display = "block";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+  document.getElementById("lightboxImage").src =
+    galleryImages[currentImageIndex];
+}
+
+function prevImage() {
+  currentImageIndex =
+    (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+  document.getElementById("lightboxImage").src =
+    galleryImages[currentImageIndex];
+}
+</script>
+
 
 <script src="assets/js/lang.js"></script>
 
